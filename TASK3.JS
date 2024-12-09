@@ -1,10 +1,10 @@
 //*calculate circle area
 
 function calculateCircleArea(){
-    const raduis = prompt ("Enter the value of the circle's raduis :");
+    let raduis = prompt ("Enter the value of the circle's raduis :");
     if ( raduis)
     {
-        const area = Math.PI*Math.pow(raduis,2);
+        let area = Math.PI*Math.pow(raduis,2);
         alert (" Total area of the circle is " +area.toFixed(10));
 
 
@@ -30,7 +30,7 @@ calculateCosine();
 
 function calculateSquareRoot()
 {
-    const number = prompt(" Enter the value to calculate square root :");
+    let number = prompt(" Enter the value to calculate square root :");
     if(number)
     {
         let squareRoot=Math.sqrt(number);

@@ -1,19 +1,19 @@
-//* Function to validate name (should be characters, not numbers)
+//* Function to validate name should be characters
 function validateName(name) {
     return /^[a-zA-Z ]+$/.test(name);
 }
 
-// Function to validate phone number (8 digits)
+// Function to validate phone number 7 digits
 function validatePhoneNumber(phone) {
     return /^\d{7}$/.test(phone);
 }
 
-// Function to validate mobile number (11 digits, starting with 010, 011, or 012)
+// Function to validate mobile number 11 digits, starting with 010, 011, or 012
 function validateMobileNumber(mobile) {
     return /^01[012]\d{8}$/.test(mobile);
 }
 
-// Function to validate email (basic format check)
+// Function to validate email 
 function validateEmail(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
@@ -70,8 +70,8 @@ function displayWelcomeMessage(user, color) {
 }
 
 // Get user info and color preference
-const userInfo = getUserInfo();
-const color = prompt("Choose a color for the welcome message (red, green, or blue):");
+let userInfo = getUserInfo();
+let color = prompt("Choose a color for the welcome message (red, green, or blue):");
 
 // Display the welcome message
 displayWelcomeMessage(userInfo, color);

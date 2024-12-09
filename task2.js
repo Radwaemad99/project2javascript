@@ -1,6 +1,6 @@
 //* find largest word in string 
 function findLargestWord (str) {
-    const words = str.split (' ');
+    let words = str.split (' ');
     let largestWord = words[0];
     for( let i = 1; i< words.length ; i++)
     {
@@ -18,10 +18,10 @@ console.log( largestWord);
 //* sort arrays numbers 
 function sortArraysNumbers ()
 {
-    const numbers=[];
+    let numbers=[];
     for ( let i = 0; i < 5 ; i++)
     {
-        const num = parseInt( prompt ( "Enter number  :" ));
+        let num = parseInt( prompt ( "Enter number  :" ));
         numbers.push(num);
     }
     //* sort by acc numbers
